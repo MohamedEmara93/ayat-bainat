@@ -1,0 +1,376 @@
+@media (max-width:1199px) {
+  .fixed-menu {
+    display: block;
+  }
+
+  .main-header{
+    .main-nav{
+      display: none;
+    }
+  }
+  .dashboard-menu {
+    display: none;
+  }
+  .mobile-header {
+    display: block;
+    position: fixed;
+    .box-shadow;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    .content {
+      padding: 20px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      .mob-menu {
+        z-index: 99;
+        .btn {
+          color: #333;
+        }
+      }
+      .mob-logo {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        display: inline-flex;
+        
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        a {
+          color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          font-size: 18px;
+        }
+        img {
+          height: 40px;
+          margin: 0 10px !important;
+        }
+      }
+
+      .search{
+        display: flex;
+        align-items: center;
+        z-index: 99;
+        .btn{
+          width: 40px;
+          height: 40px;
+          padding: 0;
+          margin: 0 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .header-classic {
+    .navbar {
+      display: none;
+    }
+    .header-caption {
+      padding-top: 150px;
+    }
+    &.inner-header {
+      min-height: 100px;
+      background: transparent;
+    }
+  }
+}
+@media (max-width: 991px) {}
+@media (max-width:767px) {
+  .main-hero{
+    min-height: 500px;
+    padding-top: 150px;
+    .hero-caption{
+      text-align: center;
+      .row{
+        align-items: center;
+       
+      }
+      h1{
+        margin-top: 40px;
+        font-size: 40px;
+      
+      }
+      
+  
+      .download-app{
+        justify-content: center;
+        img{
+          height: 40px;
+          margin-left: 10px;
+        }
+      }
+    }
+  
+  
+    .hero-mockup{
+      img{
+        height: auto;
+      }
+      
+    }
+  
+  
+  
+  
+  }
+
+  .main-hero .bg-shape{
+    display: none;
+  }
+
+  .main-nav{
+    background: #0d4541;
+  }
+  .main-nav .navbar-nav .nav-item .nav-link{
+    color: #fff;
+  }
+
+  .about-app{
+    .video{
+      margin-bottom: 40px;
+    }
+  }
+   
+
+  .app-features {
+    ul{
+      li{
+        margin: 20px 0;
+        .media{
+          flex-direction: column;
+          justify-content: center;
+          .media-left{
+            width: 100%;
+            justify-content: center;
+          }
+          .media-body{
+            text-align: center;
+            padding: 20px 0 0;
+            .media-title{
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    &.bg-dark{
+      padding-bottom: 0;
+      
+    }
+
+    .mockup-bg{
+      display: none;
+    }
+  }
+
+  .download-app img{
+    height: 48px;
+  }
+
+  .main-footer .app-download {
+    img{
+      height: 40px;
+    }
+
+  }
+
+  .navbar-toggler{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    span{
+      border: 0;
+      width: auto;
+      height: auto;
+      i{
+        color: #fff;
+      }
+    }
+  }
+  .rtl-mode .offset-lg-2{
+    margin: 0;
+  }
+
+  .view-sidebar{
+    margin-top: 30px;
+  }
+
+  
+  .top-footer{
+    .footer-logo{
+      text-align: center;
+      img{
+        margin: 0 auto 30px;
+      }
+    }
+    .footer-social{
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+
+    h5{
+      margin: 20px 0;
+    }
+
+    &:before{
+      content: none;
+    }
+    &:after{
+      content: none;
+    }
+
+    .second-logo{
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .mail-list{
+      h6{
+        text-align: center;
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .latest-added{
+    .main-card{
+      height: auto;
+      margin-top: -150px;
+      .col-lg-3{
+        padding: 0;
+      }
+      .card-header{
+        height: auto;
+        .border-radius-corner(15px,0,0,15px);
+        text-align: center;
+        padding: 20px;
+      }
+  
+      .card-body{
+        position: relative;
+      }
+      .owl-carousel{
+
+        .item{
+          .card-body{
+            
+          }
+        }
+        .owl-nav {
+          position: absolute;
+          bottom: -15px;
+        }
+      }
+    }
+  }
+
+
+  .main-categories .heading-title{
+    padding: 0 15px;
+  }
+
+  .featured-azkar{
+    .section-title{
+      text-align: center;
+    }
+    &:after{
+      content: none;
+    }
+    ul li .zekr-item{
+      width: 100%;
+    }
+  }
+
+
+  .app-download .app-shot{
+    display: none;
+  }
+
+  .azkar-filter{
+    flex-direction: column;
+    .filter-title{
+      margin-bottom: 20px;
+    }
+  }
+
+  .audio-card {
+    .media{
+      flex-direction: column;
+      .media-left{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+
+      .media-body{
+        padding: 20px 15px;
+      }
+    }
+  }
+
+  .inner-category-card{
+    margin: 10px 0;
+    border: 1px solid #ddd !important;
+    display: flex;
+    padding: 30px 15px;
+  }
+
+  .category-article{
+  
+    .details{
+      margin-top: 20px;
+      position: relative;
+      left: 0;
+      top: 0;
+      .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  
+    .delete{
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-top: 20px;
+      .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+  .islamic-typography .hadith .content p, .islamic-typography .quran .content p, .redactor-box .redactor-layer .hadith .content p, .redactor-box .redactor-layer .quran .content p{
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .azkar-filter .dropdown .dropdown-menu{
+    width: 100%;
+  }
+
+  .view-zekr blockquote{
+    margin-bottom: 20px;
+  }
+
+  .view-zekr .references{
+    margin-bottom: 30px;
+  }
+}
+@media (max-width:480px) {}

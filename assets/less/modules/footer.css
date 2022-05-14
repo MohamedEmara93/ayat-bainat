@@ -1,0 +1,27 @@
+.main-footer {
+  background: linear-gradient(to left, #0d4541 51%, #083633 100%);
+  background-size: 200% auto;
+  position: relative;
+  padding-top: 220px;
+  padding-bottom: 70px;
+}
+.main-footer .shape-top {
+  background-image: url("../../assets/images/footer-top.svg");
+  background-size: 100% 204px;
+  top: 0;
+  height: 180px;
+  z-index: 1;
+  margin-top: -1px;
+  position: absolute;
+  width: 100%;
+  pointer-events: none;
+  transform: rotate(180deg);
+}
+.main-footer .footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-footer .footer-logo img {
+  height: 80px;
+}

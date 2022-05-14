@@ -1,0 +1,474 @@
+
+.main-hero{
+  position: relative;
+  
+  min-height: 800px;
+  padding: 200px 0 250px;
+  z-index: 10;
+  .shapes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.shape {
+    position: relative;
+}
+
+.bg-shape {
+    position: absolute;
+    height: 190%;
+    width: 100%;
+    display: block;
+    border-radius: 120px;
+    background: #0c4541;
+    bottom: 0;
+    right: 0;
+    transform: translate(35%,-28%) rotate(-35deg);
+    z-index: 0;
+    @media (max-width: 991px) {
+        height: 130%;
+    }
+}
+  // &:after{
+  //   background: #06312E;//#2E7955;
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   z-index: -1;
+  //   opacity: .9;
+  // }
+  // .wave-area {
+  //   height: 5%;
+  //   width: 100%;
+  //   position: absolute;
+  //   bottom: 0;
+  //   left: 0;
+  //   background: white;
+  //   z-index: 1;
+  //   .wave {
+  //     background: url("../../assets/images/wave.svg") repeat-x;
+  //     position: absolute;
+  //     top: -100px;
+  //     width: 6400px;
+  //     height: 100px;
+  //     animation: wave 35s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  //     transform: translate3d(0, 0, 0);
+
+  //     &:nth-of-type(2){
+  //       top: -56px;
+  //       animation: wave 20s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+  //           swell 7s ease -1.25s infinite;
+  //       opacity: 1;
+  //     }
+  //   }
+
+  
+  // }
+
+  .hero-caption{
+    .row{
+      align-items: center;
+    }
+    h1{
+      color: #000;
+      font-size: 64px;
+      font-weight: bold;
+      text-shadow: 2px 2px 0 #ccc;
+    
+    }
+    p{
+      color: #000;
+      margin: 24px 0;
+      b{
+        font-size: 30px;
+      }
+    }
+
+    
+  }
+
+
+  .hero-mockup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      height: 500px;
+      margin: auto;
+    }
+  }
+
+
+
+
+}
+
+.download-app{
+  display: flex;
+  align-items: center;
+
+  img{
+    height: 40px;
+    margin-left: 10px;
+    .border-radius(6px);
+  }
+}
+
+@keyframes wave {
+  0% {
+      margin-right: 0;
+  }
+  100% {
+      margin-right: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+      transform: translate3d(0, -45px, 0);
+  }
+  50% {
+      transform: translate3d(0, 5px, 0);
+  }
+}
+
+.main-nav {
+  background: transparent;
+  box-shadow: none;
+  padding: 15px 0;
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    img {
+      height: 80px;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        padding: 8px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        font-weight: normal;
+        color: #0c4541;
+        position: relative;
+        .transition;
+        
+        
+
+        &:hover{
+          color: @green;
+          
+        }
+        i{
+          margin: 0 5px;
+        }
+
+        &.btn{
+          background: #dba914;
+          .no-border;
+          padding: 8px 24px;
+          color: #fff;
+          &:hover{
+            color: #fff;
+          }
+        }
+        
+      }
+      
+      
+      
+    }
+  }
+}
+
+
+
+
+
+
+
+
+.headroom--not-top{
+  background: #0c4541;
+  .box-shadow;
+  padding: 10px 0;
+  .navbar-brand{
+    
+
+    .default-logo{
+      display: none;
+    }
+
+    .scrolled-logo{
+      display: flex;
+    }
+  }
+  .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+    color: #fff !important;
+  }
+  .navbar-nav{
+    .nav-item{
+      .nav-link{
+        color: #fff !important;
+        &.btn{
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}
+
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 99;
+}
+
+.headroom {
+  transition: transform .25s ease-in-out;
+  will-change: transform
+}
+
+.headroom--pinned {
+  transform: translateY(0)
+}
+
+.headroom--unpinned {
+  transform: translateY(-100%)
+}
+
+.animated {
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  will-change: transform, opacity
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.animated.slideDown {
+  animation-name: slideDown
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0)
+  }
+  100% {
+    transform: translateY(-100%)
+  }
+}
+
+
+
+.animated.slideUp {
+  animation-name: slideUp
+}
+
+@keyframes swingInX {
+  0% {
+    transform: perspective(400px) rotateX(-90deg)
+  }
+  100% {
+    transform: perspective(400px) rotateX(0)
+  }
+}
+
+.animated.swingInX {
+  -ie-transform-origin: top;
+  transform-origin: top;
+  -webkit-animation-name: swingInX;
+  -moz-backface-visibility: visible!important;
+  -moz-animation-name: swingInX;
+  -o-backface-visibility: visible!important;
+  -o-animation-name: swingInX;
+  backface-visibility: visible!important;
+  animation-name: swingInX
+}
+
+.animated.flipInX,
+.animated.swingOutX {
+  -webkit-backface-visibility: visible!important;
+  -moz-backface-visibility: visible!important;
+  -o-backface-visibility: visible!important
+}
+
+@keyframes swingOutX {
+  0% {
+    transform: perspective(400px) rotateX(0)
+  }
+  100% {
+    transform: perspective(400px) rotateX(-90deg)
+  }
+}
+
+.animated.swingOutX {
+  -webkit-transform-origin: top;
+  -webkit-animation-name: swingOutX;
+  -moz-animation-name: swingOutX;
+  -o-animation-name: swingOutX;
+  animation-name: swingOutX;
+  backface-visibility: visible!important
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0
+  }
+  100% {
+    transform: perspective(400px) rotateX(0);
+    opacity: 1
+  }
+}
+
+.animated.flipInX {
+  -webkit-animation-name: flipInX;
+  -moz-animation-name: flipInX;
+  -o-animation-name: flipInX;
+  backface-visibility: visible!important;
+  animation-name: flipInX
+}
+
+@keyframes flipOutX {
+  0% {
+    transform: perspective(400px) rotateX(0);
+    opacity: 1
+  }
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0
+  }
+}
+
+.animated.flipOutX {
+  -webkit-animation-name: flipOutX;
+  -webkit-backface-visibility: visible!important;
+  -moz-animation-name: flipOutX;
+  -moz-backface-visibility: visible!important;
+  -o-animation-name: flipOutX;
+  -o-backface-visibility: visible!important;
+  animation-name: flipOutX;
+  backface-visibility: visible!important
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px)
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px)
+  }
+  80% {
+    transform: translateY(-10px)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.animated.bounceInDown {
+  animation-name: bounceInDown
+}
+
+@keyframes bounceOutUp {
+  0% {
+    transform: translateY(0)
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(20px)
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px)
+  }
+}
+
+
+.main-header{
+  &.inner-header{
+    min-height: 400px;
+    background: url(../../assets/images/Background.png) no-repeat;
+    background-size: cover;
+    .hero-search{
+      padding-top: 220px;
+      max-width: 60%;
+      margin: 0 auto;
+      
+    }
+    
+  }
+ 
+}
+
+
+@media (min-width: 992px) {
+  .animate {
+    animation-duration: 0.3s;
+    -webkit-animation-duration: 0.3s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: transform;
+    -webkit-opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    -webkit-opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+    -webkit-opacity: 0;
+  }
+}
+
+.slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+}
+

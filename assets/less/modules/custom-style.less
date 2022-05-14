@@ -1,0 +1,356 @@
+body[data-aos-duration='225'] [data-aos],
+[data-aos][data-aos][data-aos-duration='225'] {
+  transition-duration: 225ms;
+}
+
+body{
+  color: #222;
+  font-size: 22px;
+}
+
+p{
+  line-height: 1.7;
+}
+
+.btn {
+  .no-margin;
+  box-shadow: none;
+  outline: none;
+}
+
+.btn.focus,
+.btn:focus {
+  box-shadow: none !important;
+}
+
+.text-dark{
+  color: #000;
+}
+
+.text-white{
+  color: #fff;
+}
+
+.text-green{
+  color: #2e7955;
+}
+
+
+.section-title{
+  text-align: center;
+  margin-bottom: 50px;
+  .heading{
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 2px 2px 0 #ccc;
+    i{
+      font-size: 30px;
+    }
+  }
+}
+
+.about-app{
+  padding: 0 0 120px;
+  min-height: 600px;
+  position: relative;
+  margin-top: -100px;
+  .video{
+    margin-top: 40px;
+    .plyr__video-embed{
+   
+      height: 400px;
+
+      .plyr__poster{
+        background-size: cover;
+      }
+    }
+  }
+
+  p{
+    
+  }
+}
+
+.app-download{
+  padding-bottom: 120px;
+  img{
+    margin-bottom: 20px;
+  }
+}
+
+.share-modal{
+  .modal-header{
+    .modal-title{
+      color: #000;
+      font-size: 26px;
+    }
+    .btn-close{
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .modal-body{
+    text-align: center;
+
+    .jssocials-share-link{
+      padding: 0;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .jssocials-share-logo{
+        width: auto;
+        font-size: 21px;
+      }
+    }
+  }
+}
+
+
+.app-features{
+  background: #fff;
+  padding: 0 0 120px;
+  position: relative;
+  z-index: 2;
+  
+  ul{
+    li{
+      margin: 40px 0;
+      .media{
+        display: flex;
+        .media-left{
+          display: flex;
+          img{
+            height: 50px;
+           
+          }
+        }
+        .media-body{
+          padding: 0 10px;
+          .media-title{
+            margin: 0 0 16px;
+            font-weight: bold;
+            color: #444;
+            font-size: 26px;
+          }
+          p{
+            margin: 0 0 16px;
+            font-size: 20px;
+            line-height: 1.7;
+            b{
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card{
+    img{
+      height: 60px;
+    }
+  }
+
+  .section-img-1{
+
+  }
+
+  &.bg-dark{
+    
+  }
+  &.has-padding-top{
+    
+  }
+}
+
+.app-features-2{
+  padding: 120px 0;
+  position: relative;
+
+  ul{
+    li{
+      text-align: center;
+      img{
+        height: 60px;
+        margin-bottom: 16px;
+      }
+      p{
+        margin: 0;
+      }
+    }
+  }
+}
+
+.developed-by{
+  padding: 0 0 120px;
+  .card{
+    position: relative;
+    padding: 80px 50px;
+    .border-radius(25px);
+    background: @green;
+    .logo{
+      position: absolute;
+      top: 35px;
+      right: -100px;
+      background: #fff;
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      .border-radius(50%);
+      img{
+        height: 100px;
+      }
+    }
+
+    .card-body{
+      .card-title{
+        color: @orange;
+        font-size: 24px;
+        font-weight: 600;
+        margin: 0 0 16px;
+      }
+      p{
+        color: #fff;
+        font-weight: 300;
+        font-size: 17px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+.screenshots{
+  padding: 120px 0;
+  background: linear-gradient(to left, #07928e 0%, #037571 51%, #07928e 100%);
+
+  .owl-carousel {
+    padding-bottom: 80px;
+    .item{
+      .card{
+        padding: 10px;
+        .no-border;
+        .border-radius;
+        img{
+          .border-radius;
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+      visibility: hidden;
+      position: absolute;
+      top: 150px;
+      left: 0;
+      margin: auto;
+      right: 0;
+      width: auto;
+      display: block;
+
+      .owl-prev,
+      .owl-next {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+        border: 1px solid #000000;
+        color: #000000;
+        .border-radius(50%);
+        text-align: center;
+        opacity: inherit;
+        margin: auto;
+        outline: none;
+      }
+      .owl-prev {
+        float: left;
+        margin-left: -60px;
+      }
+      .owl-next {
+        float: right;
+        margin-right: -60px;
+      }
+    }
+    .owl-dots {
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 9999;
+      .owl-dot {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 15px;
+        height: 15px;
+        .border-radius(50%);
+        padding: 3px !important;
+        border: 1px solid transparent;
+        margin: 0 3px;
+        outline: none;
+        span {
+          background: #CFDFDB;
+          width: 7px;
+          height: 7px;
+          display: flex;
+          .border-radius(50%);
+        }
+        &.active {
+          border-color: @green;
+          span {
+            background: @green;
+          }
+        }
+      }
+    }
+    .owl-stage-outer {
+      overflow: visible;
+    }
+    .owl-item {
+      opacity: 0.7;
+      transform: scale(0.85);
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      -o-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(0.85, 0.85);
+      transition: all 0.3s ease-in-out 0s;
+
+      &.active.center {
+        opacity: 1;
+        -webkit-backface-visibility: hidden;
+        -moz-backface-visibility: hidden;
+        -ms-backface-visibility: hidden;
+        -o-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform: translateZ(0) scale(1, 1);
+        transform: scale(1);
+      }
+    }
+  }
+
+  
+}
+
+
+.testimonials{
+  padding: 120px 0;
+  .card{
+    padding: 24px;
+    p{
+      font-size: 20px;
+      color: #7c7c7c;
+      margin: 0;
+    }
+  }
+}
